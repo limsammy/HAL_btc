@@ -19,6 +19,6 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 30.seconds do
-  rake 'get_btc_prices:save'
+every 1.minutes do
+  rake 'get_btc_prices:save', :environment => 'development'
 end
