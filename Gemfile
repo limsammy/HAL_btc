@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.5'
 # Custom Gems Here
 gem 'rspec-rails'
 gem 'factory_bot_rails'
+gem 'coinbase'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
