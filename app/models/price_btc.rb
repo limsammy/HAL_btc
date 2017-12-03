@@ -1,0 +1,2 @@
+class PriceBtc < ApplicationRecord
+end
