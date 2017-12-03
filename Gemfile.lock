@@ -56,7 +56,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    chronic (0.10.2)
+    chartkick (2.2.4)
     coderay (1.1.2)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -70,6 +70,8 @@ GEM
     crass (1.0.3)
     diff-lcs (1.3)
     erubi (1.7.0)
+    et-orbi (1.0.8)
+      tzinfo
     execjs (2.7.0)
     factory_bot (4.8.2)
       activesupport (>= 3.0.0)
@@ -81,6 +83,8 @@ GEM
       thor (~> 0.14)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    groupdate (3.2.0)
+      activesupport (>= 3)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -161,6 +165,8 @@ GEM
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
     ruby_dep (1.5.0)
+    rufus-scheduler (3.4.2)
+      et-orbi (~> 1.0)
     sass (3.5.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -202,8 +208,6 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
-    whenever (0.10.0)
-      chronic (>= 0.6.3)
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -214,10 +218,12 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   capybara
+  chartkick
   coffee-rails (~> 4.2)
   coinbase
   factory_bot_rails
   figaro
+  groupdate
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
@@ -226,6 +232,7 @@ DEPENDENCIES
   puma (~> 3.7)
   rails (~> 5.1.4)
   rspec-rails
+  rufus-scheduler
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
@@ -233,7 +240,6 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
-  whenever
 
 BUNDLED WITH
    1.16.0
