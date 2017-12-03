@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171203005032) do
+ActiveRecord::Schema.define(version: 20171203012745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "price_btcs", force: :cascade do |t|
+    t.float "buy"
+    t.float "sell"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -26,7 +26,7 @@ gem 'factory_bot_rails'
 gem 'coinbase'
 gem 'capybara'
 gem 'bootstrap-sass'
-gem 'jquery'
+gem 'jquery-rails'
 gem 'figaro'
 
 group :development, :test do
