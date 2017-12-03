@@ -11,7 +11,7 @@ RSpec.describe "visitor visits price pages" do
     click_on "View Price Index"
 
     expect(current_path).to eq('/price_btcs')
-    expect(page).to have_content("Sell: ")
-    expect(page).to have_content("Buy: ")
+    expect(page).to have_content("Sell Price: ")
+    expect(page).to have_content("Buy Price: ")
   end
 end
