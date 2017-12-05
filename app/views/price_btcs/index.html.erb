@@ -1,14 +1,12 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
+<div class="wrapper">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-6">
       <p>Buy Price: <%= PriceBtc.get_buy_price %></p>
+      <%= line_chart PriceBtc.group_by_hour(:created_at).average(:buy) %>
     </div>
-
-    <div class="col">
-    </div>
-
-    <div class="col">
+    <div class="col col-lg-6">
       <p>Sell Price: $<%= PriceBtc.get_sell_price %></p>
+      <%= line_chart PriceBtc.group_by_hour(:created_at).average(:sell) %>
     </div>
   </div>
 </div>
