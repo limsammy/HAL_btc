@@ -20,3 +20,7 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore ds store files
+.DS_Store
+spec/.DS_Store
